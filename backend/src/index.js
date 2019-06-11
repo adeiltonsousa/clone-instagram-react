@@ -7,9 +7,6 @@ mongoose.connect('mongodb+srv://cloneinstagram:cloneinstagram@cluster0-4xk4c.mon
     useNewUrlParser: true,
 })
 
-app.get('/',(req, res) => {
-    return res.send(`Olsssá, ${req.query.name}`);
-});
+app.use(require('./routes'));
 
 app.listen(3333);
-
