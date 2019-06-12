@@ -8,6 +8,8 @@ module.exports = {
 
         await post.save();
 
+        req.io.emit('like', post) // enviar os dados de um novo like a todos os usuário
+
         return res.json(post);
     }
 };
