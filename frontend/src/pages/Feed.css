@@ -47,6 +47,12 @@ section#post-list article footer .action {
     margin-bottom: 10px;
 }
 
+section#post-list article footer .action button {
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
 section#post-list article footer .action img {
     height: 20px;
     margin-right: 10px;
